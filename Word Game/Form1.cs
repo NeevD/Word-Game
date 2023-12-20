@@ -7,7 +7,7 @@ namespace Word_Game
         int i;
         int m = 100;
         int score;
-        String[] prompts = { "Food", "Jobs", "Adjectives", "Fruit", "Furniture" };
+        String[] prompts = { "Food", "Jobs", "Adjectives", "Fruit", "Furniture", "Animals", "Languages" };
         Random rand = new Random();
         public Form1()
         {
@@ -26,7 +26,7 @@ namespace Word_Game
             labels[8] = label13;
             labels[9] = label14;
 
-            label8.Text = "Prompt : " + prompts[rand.Next(0, 4)];
+            label8.Text = "Prompt : " + prompts[rand.Next(0, 7)];
             timer1.Enabled = true;
 
             StreamReader file = new StreamReader("../../../resources/ukenglish.txt");
