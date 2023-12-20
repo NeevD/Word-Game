@@ -46,6 +46,7 @@
             label12 = new Label();
             label13 = new Label();
             label14 = new Label();
+            label15 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -141,7 +142,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(75, 18);
+            label9.Location = new Point(12, 24);
             label9.Name = "label9";
             label9.Size = new Size(69, 15);
             label9.TabIndex = 10;
@@ -196,11 +197,21 @@
             label14.TabIndex = 15;
             label14.Text = "(10)";
             // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(12, 265);
+            label15.Name = "label15";
+            label15.Size = new Size(160, 45);
+            label15.TabIndex = 16;
+            label15.Text = "Tip : Think of as many words \r\nas you can that match the \r\nprompt within 100s";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(235, 272);
+            ClientSize = new Size(221, 328);
+            Controls.Add(label15);
             Controls.Add(label14);
             Controls.Add(label13);
             Controls.Add(label12);
@@ -243,5 +254,6 @@
         private Label label12;
         private Label label13;
         private Label label14;
+        private Label label15;
     }
 }
